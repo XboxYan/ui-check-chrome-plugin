@@ -23,6 +23,6 @@
 			"run_at": "document_end"
 		}
 	],
-	"homepage_url": "https://github.com/XboxYan",
+	"homepage_url": "https://github.com/XboxYan/ui-check-chrome-plugin",
 	"devtools_page": "popup.html"
 }
