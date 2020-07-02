@@ -1,0 +1,28 @@
+{
+	"manifest_version": 2,
+	"name": "ui-check",
+	"version": "1.0.0",
+	"description": "这是一个可以检测页面极限状态的插件，包括文本溢出，图片缺失，文本缺失等情况",
+	"icons":
+	{
+		"16": "icon.jpg",
+		"48": "icon.jpg",
+		"128": "icon.jpg"
+	},
+	"browser_action": 
+	{
+		"default_icon": "icon.jpg",
+		"default_title": "这是一个可以检测页面极限状态的插件",
+		"default_popup": "popup.html"
+	},
+	"content_scripts": 
+	[
+		{
+			"matches": ["<all_urls>"],
+			"js": ["content-script.js"],
+			"run_at": "document_end"
+		}
+	],
+	"homepage_url": "https://github.com/XboxYan",
+	"devtools_page": "popup.html"
+}
