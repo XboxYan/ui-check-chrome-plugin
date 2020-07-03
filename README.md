@@ -2,6 +2,10 @@
 
 这是一个可以在线检测页面UI的各种边界情况的插件。
 
+[Edge商店](https://microsoftedge.microsoft.com/addons/detail/uicheck/jjpoajakfpbbgobhbfepdmjflghdapnp)
+
+Chorme 正在审核中...
+
 ## Features
 
 很多情况下，页面都是最完美的状态，对于文字过多或者为空，图片尺寸大小等可能并没有做相关的设定，可能导致在实际上线后出现各种边界问题（比如文本溢出、高度塌陷、图片过大等等）
