@@ -34,6 +34,8 @@ const randomImg = function () {
 
 // 文本过多
 const overflow = function () {
+    text_nodes.length = 0;
+    img_nodes.length = 0;
     map(document.body)
     text_nodes.forEach(function (el) {
         if (!el.bak) {
@@ -51,6 +53,8 @@ const overflow = function () {
 
 // 文本为空
 const empty = function () {
+    text_nodes.length = 0;
+    img_nodes.length = 0;
     map(document.body);
     text_nodes.forEach(function (el) {
         if (!el.bak) {
@@ -68,6 +72,8 @@ const empty = function () {
 
 // 随机
 const random = function () {
+    text_nodes.length = 0;
+    img_nodes.length = 0;
     map(document.body);
     text_nodes.forEach(function (el) {
         if (!el.bak) {
@@ -85,6 +91,8 @@ const random = function () {
 
 // 正常
 const normal = function () {
+    text_nodes.length = 0;
+    img_nodes.length = 0;
     map(document.body);
     text_nodes.forEach(function (el) {
         if (el.bak) {
