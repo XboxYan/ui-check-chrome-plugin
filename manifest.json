@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "ui-check",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "这是一个可以检测页面极限状态的插件，包括文本溢出，图片缺失，文本缺失等情况",
 	"icons":
 	{
