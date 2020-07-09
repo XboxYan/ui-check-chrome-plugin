@@ -14,11 +14,13 @@ const img_nodes = [];
 const map = function (nodes) {
     nodes.childNodes.forEach(function (el) {
         if (el.nodeType === Node.TEXT_NODE) {
-            if (el.data.trim()) {
+            if (el.data.trim() && !el.isRender) {
+                el.isRender = true;
                 text_nodes.push(el);
             }
         } else if (el.nodeType === Node.ELEMENT_NODE) {
-            if (el.tagName === 'IMG') {
+            if (el.tagName === 'IMG' && !el.isRender ) {
+                el.isRender = true;
                 img_nodes.push(el);
             } else {
                 map(el);
@@ -34,8 +36,6 @@ const randomImg = function () {
 
 // 文本过多
 const overflow = function () {
-    text_nodes.length = 0;
-    img_nodes.length = 0;
     map(document.body)
     text_nodes.forEach(function (el) {
         if (!el.bak) {
@@ -53,8 +53,6 @@ const overflow = function () {
 
 // 文本为空
 const empty = function () {
-    text_nodes.length = 0;
-    img_nodes.length = 0;
     map(document.body);
     text_nodes.forEach(function (el) {
         if (!el.bak) {
@@ -72,8 +70,6 @@ const empty = function () {
 
 // 随机
 const random = function () {
-    text_nodes.length = 0;
-    img_nodes.length = 0;
     map(document.body);
     text_nodes.forEach(function (el) {
         if (!el.bak) {
@@ -91,8 +87,6 @@ const random = function () {
 
 // 正常
 const normal = function () {
-    text_nodes.length = 0;
-    img_nodes.length = 0;
     map(document.body);
     text_nodes.forEach(function (el) {
         if (el.bak) {
