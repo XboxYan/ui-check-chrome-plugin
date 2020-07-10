@@ -4,7 +4,7 @@
 
 [Edge商店](https://microsoftedge.microsoft.com/addons/detail/uicheck/jjpoajakfpbbgobhbfepdmjflghdapnp)
 
-Chorme 正在审核中...
+[Chorme商店](https://chrome.google.com/webstore/detail/ui-check/fademlbmekfbholnmcomnmdghjalkcii/related?hl=zh-CN&authuser=0)
 
 ## Features
 
