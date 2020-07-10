@@ -6,23 +6,17 @@
 	"icons":
 	{
 		"16": "icon.png",
+		"32": "icon.png",
 		"48": "icon.png",
 		"128": "icon.png"
 	},
 	"browser_action": 
 	{
 		"default_icon": "icon.png",
-		"default_title": "这是一个可以检测页面极限状态的插件",
+		"default_title": "这是一个可以检测页面边界状态的插件",
 		"default_popup": "popup.html"
 	},
-	"content_scripts": 
-	[
-		{
-			"matches": ["<all_urls>"],
-			"js": ["content-script.js"],
-			"run_at": "document_end"
-		}
-	],
+	"permissions": ["activeTab"],
 	"homepage_url": "https://github.com/XboxYan/ui-check-chrome-plugin",
 	"devtools_page": "popup.html"
 }

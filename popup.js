@@ -10,6 +10,13 @@ function sendMessageToContentScript(message, callback)
 	});
 }
 
+
+chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
+	chrome.tabs.executeScript(tabs[0].id, {file: 'content-script.js'});
+});
+
+
+
 var group = document.getElementById('btn-group');
 
 group.querySelectorAll('button').forEach(function(btn){
